@@ -1,1 +1,621 @@
-<h1>INICIO</h1>
+<h1>{{vm.titulo}}</h1>
+<hr>
+
+<div class="accordion mb-5" id="accordionExample">
+    <!-- Card 1 -->
+    <div class="card">
+        <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                    aria-expanded="false" aria-controls="collapseOne">
+                    <strong>Arrow:</strong> Use Arrow Functions to Write Concise Anonymous Functions
+                </button>
+            </h2>
+        </div>
+
+        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+                <pre>
+                    <code>
+                        const magic = () =>
+                        {
+                            "use strict";
+                            return new Date();
+                        };
+                    </code>
+                </pre>
+            </div>
+        </div>
+    </div>
+    <!-- Card 2 -->
+    <div class="card">
+        <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="false" aria-controls="collapseTwo">
+                    <strong>Arrow:</strong> Write Arrow Functions with Parameters
+                </button>
+            </h2>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+                <pre>
+                    <code>
+                        const myConcat = (arr1, arr2) =>
+                        {
+                            "use strict";
+                            return arr1.concat(arr2);
+                        };
+                        // test your code
+                        console.log(myConcat([1, 2], [3, 4, 5]));
+                    </code>
+                </pre>
+            </div>
+        </div>
+    </div>
+    <!-- Card 3 -->
+    <div class="card">
+        <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
+                    aria-expanded="false" aria-controls="collapseThree">
+                    <strong>Spread:</strong> Use the Spread Operator to Evaluate Arrays In-Place
+                </button>
+            </h2>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+                <pre>
+                    <code>
+                        const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];
+                        let arr2;
+                        
+                        arr2 = [...arr1];  // change this line
+                        
+                        console.log(arr2);
+                    </code>
+                </pre>
+            </div>
+        </div>
+    </div>
+    <!-- Card 4 -->
+    <div class="card">
+        <div class="card-header" id="headingFour">
+            <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour"
+                    aria-expanded="false" aria-controls="collapseFour">
+                    <strong>Destructuring Assignment:</strong> Use Destructuring Assignment to Extract Values from
+                    Objects
+                </button>
+            </h2>
+        </div>
+        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+            <div class="card-body">
+                <pre>
+                    <code>
+                        const HIGH_TEMPERATURES = {
+                            yesterday: 75,
+                            today: 77,
+                            tomorrow: 80
+                        };
+                        
+                        // change code below this line
+                        
+                        const {today, tomorrow} = HIGH_TEMPERATURES;
+                        
+                        // change code above this line
+                        
+                        console.log(yesterday) // should be not defined
+                        console.log(today); // should be 77
+                        console.log(tomorrow); // should be 80
+                    </code>
+                </pre>
+            </div>
+        </div>
+    </div>
+    <!-- Card 5 -->
+    <div class="card">
+        <div class="card-header" id="headingFive">
+            <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive"
+                    aria-expanded="false" aria-controls="collapseFive">
+                    <strong>Destructuring Assignment:</strong> Use Destructuring Assignment to Assign Variables from
+                    Objects
+                </button>
+            </h2>
+        </div>
+        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+            <div class="card-body">
+                <pre>
+                    <code>
+                        const HIGH_TEMPERATURES = {
+                            yesterday: 75,
+                            today: 77,
+                            tomorrow: 80
+                        };
+                        
+                        // change code below this line
+                        
+                        const {today: highToday, tomorrow: highTomorrow} = HIGH_TEMPERATURES;
+                        
+                        // change code above this line
+                        
+                        console.log(yesterday) // should be not defined
+                        console.log(highToday); // should be 77
+                        console.log(highTomorrow); // should be 80
+                    </code>
+                </pre>
+            </div>
+        </div>
+    </div>
+    <!-- Card 6 -->
+    <div class="card">
+        <div class="card-header" id="headingSix">
+            <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix"
+                    aria-expanded="false" aria-controls="collapseSix">
+                    <strong>Destructuring Assignment:</strong> Use Destructuring Assignment to Assign Variables from
+                    Nested Objects
+                </button>
+            </h2>
+        </div>
+        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+            <div class="card-body">
+                <pre>
+                    <code>
+                        const LOCAL_FORECAST = {
+                            yesterday: {
+                                low: 61,
+                                high: 75
+                            },
+                            today: {
+                                low: 64,
+                                high: 77
+                            },
+                            tomorrow: {
+                                low: 68,
+                                high: 80
+                            }
+                        };
+                        
+                        // change code below this line
+                        
+                        const {
+                            today: {
+                                low: lowToday,
+                                high: highToday
+                            }
+                        } = LOCAL_FORECAST;
+                        
+                        // change code above this line
+                        
+                        console.log(lowToday); // should be 64
+                        console.log(highToday); // should be 77
+                    </code>
+                </pre>
+            </div>
+        </div>
+    </div>
+    <!-- Card 7 -->
+    <div class="card">
+        <div class="card-header" id="headingSeven">
+            <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven"
+                    aria-expanded="false" aria-controls="collapseSeven">
+                    <strong>Destructuring Assignment:</strong> Use Destructuring Assignment to Assign Variables from
+                    Arrays
+                </button>
+            </h2>
+        </div>
+        <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+            <div class="card-body">
+                <pre>
+                    <code>
+                        let a = 8, b = 6;
+                        // change code below this line
+                        [a,b] = [b,a];
+                        // change code above this line
+                        console.log(a); // should be 6
+                        console.log(b); // should be 8
+                    </code>
+                </pre>
+            </div>
+        </div>
+    </div>
+    <!-- Card 8 -->
+    <div class="card">
+        <div class="card-header" id="headingEight">
+            <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEight"
+                    aria-expanded="false" aria-controls="collapseEight">
+                    <strong>Destructuring Assignment:</strong> Use Destructuring Assignment with the Rest Parameter to
+                    Reassign Array Elements
+                </button>
+            </h2>
+        </div>
+        <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionExample">
+            <div class="card-body">
+                <pre>
+                    <code>
+                        const source = [1,2,3,4,5,6,7,8,9,10];
+                        function removeFirstTwo(list) {
+                            "use strict";
+                            // change code below this line
+                            const [,,...arr] = list; // change this
+                            // change code above this line
+                            return arr;
+                        }
+                        const arr = removeFirstTwo(source);
+                        console.log(arr); // should be [3,4,5,6,7,8,9,10]
+                        console.log(source); // should be [1,2,3,4,5,6,7,8,9,10];
+                    </code>
+                </pre>
+            </div>
+        </div>
+    </div>
+    <!-- Card 9 -->
+    <div class="card">
+        <div class="card-header" id="headingNine">
+            <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseNine"
+                    aria-expanded="false" aria-controls="collapseNine">
+                    <strong>Destructuring Assignment:</strong> Use Destructuring Assignment to Pass an Object as a
+                    Function's Parameters
+                </button>
+            </h2>
+        </div>
+        <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordionExample">
+            <div class="card-body">
+                <pre>
+                    <code>
+                        /* Alter code below this line */
+                        class Vegetable{
+                            constructor(name)
+                            {
+                                this.name = name;
+                            }
+                        }
+                        /* Alter code above this line */
+                        
+                        const carrot = new Vegetable('carrot');
+                        console.log(carrot.name); // => should be 'carrot'    
+                    </code>
+                </pre>
+            </div>
+        </div>
+    </div>
+    <!-- Card 10 -->
+    <div class="card">
+        <div class="card-header" id="headingTen">
+            <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTen"
+                    aria-expanded="false" aria-controls="collapseTen">
+                    <strong>Classes:</strong> Use class Syntax to Define a Constructor Function
+                </button>
+            </h2>
+        </div>
+        <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordionExample">
+            <div class="card-body">
+                <pre>
+                    <code>
+                        /* Alter code below this line */
+                        class Vegetable{
+                            constructor(name)
+                            {
+                                this.name = name;
+                            }
+                        }
+                        /* Alter code above this line */
+                        
+                        const carrot = new Vegetable('carrot');
+                        console.log(carrot.name); // => should be 'carrot'    
+                    </code>
+                </pre>
+            </div>
+        </div>
+    </div>
+    <!-- Card 11 -->
+    <div class="card">
+        <div class="card-header" id="headingEleven">
+            <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                    data-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                    <strong>Getters & Setters:</strong> Use getters and setters to Control Access to an Object
+                </button>
+            </h2>
+        </div>
+        <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven" data-parent="#accordionExample">
+            <div class="card-body">
+                <pre>
+                    <code>
+                        /* Alter code below this line */
+                        class Thermostat {
+                            constructor(temperature) {
+                            this._temperature = temperature;
+                            }
+                            // getter
+                            get temperature() {
+                            return (5/9 * (this._temperature - 32));
+                            }
+                            // setter
+                            set temperature(updatedTemperature) {
+                            this._temperature = updatedTemperature;
+                            }
+                        }
+                        /* Alter code above this line */
+                        
+                        const thermos = new Thermostat(76); // setting in Fahrenheit scale
+                        let temp = thermos.temperature; // 24.44 in C
+                        thermos.temperature = 26;
+                        temp = thermos.temperature; // 26 in C    
+                    </code>
+                </pre>
+            </div>
+        </div>
+    </div>
+    <!-- Card 12 -->
+    <div class="card">
+        <div class="card-header" id="headingTwelve">
+            <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                    data-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                    <strong>Promises:</strong> Create a JavaScript Promise
+                </button>
+            </h2>
+        </div>
+        <div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve" data-parent="#accordionExample">
+            <div class="card-body">
+                <pre>
+                    <code>
+                        const makeServerRequest = new Promise(
+                            (resolve, reject) => {
+                        });
+                    </code>
+                </pre>
+            </div>
+        </div>
+    </div>
+    <!-- Card 13 -->
+    <div class="card">
+        <div class="card-header" id="headingThirteen">
+            <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                    data-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+                    <strong>Promises:</strong> Complete a Promise with resolve and reject
+                </button>
+            </h2>
+        </div>
+        <div id="collapseThirteen" class="collapse" aria-labelledby="headingThirteen" data-parent="#accordionExample">
+            <div class="card-body">
+                <pre>
+                    <code>
+                        const makeServerRequest = new Promise((resolve, reject) => {
+                            // responseFromServer represents a response from a server
+                            let responseFromServer;
+                                
+                            if(responseFromServer) {
+                                // change this line
+                                resolve("We got the data");
+                            } else {  
+                                // change this line
+                                reject("Data not received");
+                            }
+                        });
+                    </code>
+                </pre>
+            </div>
+        </div>
+    </div>
+    <!-- Card 14 -->
+    <div class="card">
+        <div class="card-header" id="headingFourteen">
+            <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                    data-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
+                    <strong>Promises:</strong> Handle a Fulfilled Promise with then
+                </button>
+            </h2>
+        </div>
+        <div id="collapseFourteen" class="collapse" aria-labelledby="headingFourteen" data-parent="#accordionExample">
+            <div class="card-body">
+                <pre>
+                    <code>
+                        const makeServerRequest = new Promise((resolve, reject) => {
+                            // responseFromServer is set to true to represent a successful response from a server
+                            let responseFromServer = true;
+                                
+                            if(responseFromServer) {
+                                resolve("We got the data",
+                                    makeServerRequest.then(result =>
+                                    {
+                                        console.log(result);
+                                    })
+                                );
+                            } else {  
+                                reject("Data not received");
+                            }
+                        });
+                    </code>
+                </pre>
+            </div>
+        </div>
+    </div>
+    <!-- Card 15 -->
+    <div class="card">
+        <div class="card-header" id="headingFifteen">
+            <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                    data-target="#collapseFifteen" aria-expanded="false" aria-controls="collapseFifteen">
+                    <strong>Promises:</strong> Handle a Rejected Promise with catch
+                </button>
+            </h2>
+        </div>
+        <div id="collapseFifteen" class="collapse" aria-labelledby="headingFifteen" data-parent="#accordionExample">
+            <div class="card-body">
+                <pre>
+                    <code>
+                        const makeServerRequest = new Promise((resolve, reject) => {
+                            // responseFromServer is set to false to represent an unsuccessful response from a server
+                            let responseFromServer = false;
+                                
+                            if(responseFromServer) {
+                                resolve("We got the data");
+                            } else {  
+                                reject("Data not received",
+                                    makeServerRequest.catch(error =>
+                                    {
+                                        console.log(error);
+                                    })
+                                );
+                            }
+                        });
+
+                        makeServerRequest.then(result => {
+                            console.log(result);
+                        });
+                    </code>
+                </pre>
+            </div>
+        </div>
+    </div>
+    <!-- Card 16 -->
+    <div class="card">
+        <div class="card-header" id="headingSixteen">
+            <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                    data-target="#collapseSixteen" aria-expanded="false" aria-controls="collapseSixteen">
+                    <strong>Functional Programming:</strong> Use the map Method to Extract Data from an Array
+                </button>
+            </h2>
+        </div>
+        <div id="collapseSixteen" class="collapse" aria-labelledby="headingSixteen" data-parent="#accordionExample">
+            <div class="card-body">
+                <pre>
+                    <code>
+                        Map
+                    </code>
+                </pre>
+            </div>
+        </div>
+    </div>
+    <!-- Card 17 -->
+    <div class="card">
+        <div class="card-header" id="headingSeventeen">
+            <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                    data-target="#collapseSeventeen" aria-expanded="false" aria-controls="collapseSeventeen">
+                    <strong>Functional Programming:</strong> Map
+                </button>
+            </h2>
+        </div>
+        <div id="collapseSeventeen" class="collapse" aria-labelledby="headingSeventeen" data-parent="#accordionExample">
+            <div class="card-body">
+                <pre>
+                    <code>
+                        Map
+                    </code>
+                </pre>
+            </div>
+        </div>
+    </div>
+    <!-- Card 18 -->
+    <div class="card">
+        <div class="card-header" id="headingEighteen">
+            <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                    data-target="#collapseEighteen" aria-expanded="false" aria-controls="collapseEighteen">
+                    <strong>Functional Programming:</strong> Filter
+                </button>
+            </h2>
+        </div>
+        <div id="collapseEighteen" class="collapse" aria-labelledby="headingEighteen" data-parent="#accordionExample">
+            <div class="card-body">
+                <pre>
+                    <code>
+                        Filter
+                    </code>
+                </pre>
+            </div>
+        </div>
+    </div>
+    <!-- Card 19 -->
+    <div class="card">
+        <div class="card-header" id="headingNineteen">
+            <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                    data-target="#collapseNineteen" aria-expanded="false" aria-controls="collapseNineteen">
+                    <strong>Functional Programming:</strong> Filter
+                </button>
+            </h2>
+        </div>
+        <div id="collapseNineteen" class="collapse" aria-labelledby="headingNineteen" data-parent="#accordionExample">
+            <div class="card-body">
+                <pre>
+                    <code>
+                        Filter
+                    </code>
+                </pre>
+            </div>
+        </div>
+    </div>
+    <!-- Card 20 -->
+    <div class="card">
+        <div class="card-header" id="headingTwenty">
+            <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                    data-target="#collapseTwenty" aria-expanded="false" aria-controls="collapseTwenty">
+                    <strong>Functional Programming:</strong> Slice
+                </button>
+            </h2>
+        </div>
+        <div id="collapseTwenty" class="collapse" aria-labelledby="headingTwenty" data-parent="#accordionExample">
+            <div class="card-body">
+                <pre>
+                    <code>
+                        Slice
+                    </code>
+                </pre>
+            </div>
+        </div>
+    </div>
+    <!-- Card 21 -->
+    <div class="card">
+        <div class="card-header" id="headingTwentyone">
+            <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                    data-target="#collapseTwentyone" aria-expanded="false" aria-controls="collapseTwentyone">
+                    <strong>Functional Programming:</strong> Slice
+                </button>
+            </h2>
+        </div>
+        <div id="collapseTwentyone" class="collapse" aria-labelledby="headingTwentyone" data-parent="#accordionExample">
+            <div class="card-body">
+                <pre>
+                    <code>
+                        Slice
+                    </code>
+                </pre>
+            </div>
+        </div>
+    </div>
+    <!-- Card 22 -->
+    <div class="card">
+        <div class="card-header" id="headingTwentytwo">
+            <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                    data-target="#collapseTwentytwo" aria-expanded="false" aria-controls="collapseTwentytwo">
+                    <strong>lorem:</strong> ipsum
+                </button>
+            </h2>
+        </div>
+        <div id="collapseTwentytwo" class="collapse" aria-labelledby="headingTwentytwo" data-parent="#accordionExample">
+            <div class="card-body">
+                <pre>
+                    <code>
+                        dolor sit amet
+                    </code>
+                </pre>
+            </div>
+        </div>
+    </div>
+</div>

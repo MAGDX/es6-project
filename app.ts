@@ -17,7 +17,7 @@ app.config([
         templateUrl: "views/inicio.html",
         controller: InicioController
       })
-      .state("app.readme", {
+      .state("readme", {
         url: "/readme",
         templateUrl: "views/readme.html"
       });
